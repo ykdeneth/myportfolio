@@ -252,7 +252,7 @@
 			<div class="vlt-animated-block" data-animation-name="fadeInUpSm"
 				style="animation-delay:0s; animation-duration:700ms;">
 				<!--Video button-->
-				<div class="vlt-video-button"><a href="assets/img/andro.mp4" data-fancybox="data-fancybox"
+				<div class="vlt-video-button"><a href="https://drive.google.com/file/d/1IUQHj7LoDYsWhzarHxknubrcptZD-BTX/preview" data-fancybox="data-fancybox"
 						data-small-btn="true" rel="nofollow"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
 							viewBox="0 0 24 27">
 							<defs />
@@ -316,6 +316,20 @@
 	<script src="assets/scripts/vlt-plugins.min.js"></script>
 	<script src="assets/scripts/vlt-helpers.js"></script>
 	<script src="assets/scripts/vlt-controllers.min.js"></script>
+	<script>
+  $(document).ready(function() {
+    $('[data-fancybox]').fancybox({
+      iframe: {
+        preload: true,
+        css: { width: '1280px', height: '720px' },
+        attr: { scrolling: 'auto', allow: 'autoplay; fullscreen' }
+      },
+      type: 'iframe',
+      smallBtn: true
+    });
+  });
+</script>
+
 </body>
 
 </html>
